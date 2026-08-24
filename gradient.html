@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000;
+        }
+        .grad {
+            width: 300px;
+            height: 320px;
+            background-color: #3e3d3d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 44px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            border-radius: 10px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 20px solid;
+            border-image: linear-gradient(135deg, #00d4ff, #0066ff, #003d99) 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="grad">
+        <div class="box">
+            <p>87%</p>
+        </div>
+    </div>
+</body>
+</html>

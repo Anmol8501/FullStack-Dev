@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        .container {
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+        }
+        h1{
+            color: #ff6347;
+            font-size: 28px;
+        }
+        .highlight {
+            color: #eeff82;
+            font-weight: bold;
+        }
+        #unique {
+            color: #0800ff;
+            font-style: italic;
+        }
+        p{
+            font-size: 20px;
+        }
+        input[type="Username"] {
+            border: 2px solid #0800ff;
+            padding: 10px;
+            font-size: 16px;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">Hii
+        <h1>Selectors</h1>
+        <p>This is a paragraph.</p>
+        <p class="highlight">This is a highlighted paragraph.</p>
+        <p id="unique">This is a unique paragraph.</p>
+        <input type="text">
+    </div>
+</body>
+</html>
