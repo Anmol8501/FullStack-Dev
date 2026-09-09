@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Control</title>
+    <style>
+        .container{
+            display: flex;
+            height: 12vh;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .box{
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+        }
+        .box1{
+            background-color: aqua;
+            flex-basis: 100px;
+        }
+        .box2{
+            background-color: lightgreen;
+            flex-grow: 1;
+        }
+        .box3{
+            background-color: lightcoral;
+        }
+        .box4{
+            background-color: rgb(242, 242, 158);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+
+    </div>
+</body>
+</html>

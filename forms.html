@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pseudo Classes</title>
+    <style>
+        input:required{
+            border-color: red;
+        }
+        input:optional{
+            border-color: green;
+        }
+        input:disabled{
+            background-color: #959393;
+            border-color: #959393;
+        }
+        input:valid{
+            background-color: #3ebb3e;
+        }
+        input:invalid{
+            background-color: #ff0000;
+        }
+        input:in-range{
+            background-color: aqua;
+        }
+        input:out-of-range{
+            background-color: #fa98f8;
+        }
+        ul{
+            list-style-type: square;
+        }
+        li{
+            padding: 5px;
+            width: 150px;
+        }
+        li:not(:nth-child(2n)){
+            background-color: #ff6347;
+            color: #fff;
+        }
+        .div:is(h2,h3){
+            color: #ff6347;
+            background-color: #dff173;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required/>
+        <br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" optional/>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required/>
+        <br><br>
+        <label for="location">Location:</label>
+        <input type="location" id="location" name="location" placeholder="Mathura" disabled/>
+        <br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" max="100" optional/>
+    </form>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <h2>Form Pseudo Classes</h2>
+    <h3>Form Pseudo Classes</h3>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, obcaecati!</div>
+</body>
+</html>

@@ -26,6 +26,7 @@
         .login {
             display: flex;
             flex-direction: column;
+            height: 300px;
         }
 
         .login h2 {
@@ -34,11 +35,6 @@
             font-family: Arial, sans-serif;
         }
 
-        label {
-            margin-bottom: 5px;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-        }
 
         input {
             padding: 8px;
@@ -67,14 +63,11 @@
     <div class="container">
         <div class="login">
             <h2>Login</h2>
-
-            <label for="username">Username</label>
-            <input type="text" id="username">
-
-            <label for="password">Password</label>
-            <input type="password" id="password">
-
-            <button type="submit">Login</button>
+            <p>Username</p>
+            <input type="text" placeholder="Enter username">
+            <p>Password</p>
+            <input type="password" placeholder="Enter password">
+            <button>Login</button>
         </div>
     </div>
 </body>

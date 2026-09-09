@@ -5,17 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DashBoard</title>
     <style>
-    .sidebar{
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(229, 238, 246);
+        }
+        .sidebar{
         width: 200px;
         height: 100vh;
         background-color: rgb(0, 0, 0);
         color: white;
         padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .sidebar h2{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    li{
+        padding: 10px;
+    }
+    ul{
+        list-style: none;
+    }
+    .dashboard{
+        display: flex;
+    }
+    .overview{
+        background-color: rgb(255, 255, 255);
+        margin: 15px;
+        border-radius: 10px;
+        width: 1250px;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+    }
+    .overview p{
+        margin-left: 20px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .boxes{
+        display: flex;
+        margin: 18px;
+
+    }
+    .box{
+        background-color: rgb(255, 255, 255);
+        width: 290px;
+        height: 200px;
+        margin-right: 15px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    table{
+        width: 1250px;
+        margin: 15px;
+        border-collapse: collapse;
+        background-color: rgb(255, 255, 255);
+        height: 20vh;
+        border-radius: 10px;
+    }
+    thead{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 20px;
+    }
+    td, th{
+        padding: 10px;
+        text-align: left;
+    }
+    td{
+        border: 1px solid rgb(0, 0, 0);
     }
     </style>
 </head>
 <body>
+    <div class="dashboard">
     <div class="sidebar">
+        <h2>DASHBOARD</h2>
         <ul>
             <li>Dashboard</li>
             <li>Profile</li>
@@ -24,6 +104,62 @@
             <li>Help</li>
             <li>Logout</li>
         </ul>
+    </div>
+    <div class="main">
+        <div class="overview">
+            <p>Dashboard Overview</p>
+        </div>
+        <div class="boxes">
+            <div class="box" style="color:rgb(196, 72, 72)">Users</div>
+            <div class="box" style="color:rgb(64, 64, 219)">Purchases</div>
+            <div class="box" style="color:rgb(215, 213, 64)">Orders</div>
+            <div class="box" style="color:rgb(70, 202, 55)">Revenue</div>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Users</th>
+                        <th>Purchases</th>
+                        <th>Orders</th>
+                        <th>Revenue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                    <tr>
+                        <td>Data 5</td>
+                        <td>Data 6</td>
+                        <td>Data 7</td>
+                        <td>Data 8</td>
+                    </tr>
+                    <tr>
+                        <td>Data 9</td>
+                        <td>Data 10</td>
+                        <td>Data 11</td>
+                        <td>Data 12</td>
+                    </tr>
+                    <tr>
+                        <td>Data 13</td>
+                        <td>Data 14</td>
+                        <td>Data 15</td>
+                        <td>Data 16</td>
+                    </tr>
+                    <tr>
+                        <td>Data 17</td>
+                        <td>Data 18</td>
+                        <td>Data 19</td>
+                        <td>Data 20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
     </div>
 </body>
 </html>
