@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+        }
+        .head{
+            background: linear-gradient(to right,rgb(40, 2, 2),black);
+            width:120%;
+            height:23vh;
+            padding: 30px;
+            color:white;
+            font-family: Arial;
+        }
+        .head p{
+            font-size:14px;
+            width:33em;
+        }
+        button{
+            width: 100px;
+            margin: 3px;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .foot{
+            background-color: black;
+            height: 70vh;
+            width:120%;
+            padding:30px;
+            overflow-x:auto;
+        }
+        .foot p{
+            color: white;
+            font-family: Arial;
+            padding-bottom:10px;
+        }
+        .box{
+            width:160px;
+            height:80px;
+            margin: 5px;
+            border-radius: 3px;
+        }
+        .slider{
+            position:relative;
+            display: flex;
+            align-items: center;
+        }
+        .trending{
+            display:flex;
+            overflow-x: auto;
+        }
+        .continue{
+            display:flex;
+            overflow: auto;
+        }
+        .action{
+            display:flex;
+            overflow: auto;
+        }
+        .neon{
+            background: linear-gradient(80deg,rgb(255,120,120),purple);
+        }
+        .blue{
+            background: rgb(12, 103, 240);
+        }
+        .yellow{
+            background: linear-gradient(rgba(230,150,0),rgb(255, 225, 0));
+        }
+        .horbour{
+            background: linear-gradient(rgb(10, 48, 3), rgb(0, 108, 100));
+        }
+        .peach{
+            background: linear-gradient(rgb(255, 120, 185),rgb(246, 54, 54));
+        }
+        .green{
+            background: linear-gradient(rgb(5, 79, 122),rgb(70, 253, 70));
+        }
+        .box p{
+            padding-top: 58px;
+            padding-left: 2px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            <h2>Midnight Horizon</h2>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia laudantium vitae fugiat facere recusandae porro similique odio molestias?</p>
+            <br>
+            <button style="width: 60px;">Play</button>
+            <button style="background-color: grey; color: rgb(245, 246, 247);">More Info</button>
+        </div>
+        <div class="foot">
+            <p style="font-weight: 700;">Trending Now</p>
+            <div class="slider">
+                <button class="btn left"><</button>
+            <div class="trending">
+                <div class="neon box">
+                    <p>Neon Draft</p>
+                </div>
+                <div class="green box">
+                    <p>Paper Moon</p>
+                </div>
+                <div class="yellow box">
+                    <p style="color:black">Echo Chamber</p>
+                </div>
+                <div class="blue box">
+                    <p>Last Light</p>
+                </div>
+                <div class="horbour box">
+                    <p>Silent Harbour</p>
+                    </div>
+                </div>
+            </div>
+            <p style="font-weight: 700; padding-top: 30px;">Continue Watching</p>
+            <div class="continue">
+                <div class="yellow box">
+                    <p style="color:black">Echo Chamber</p>
+                </div>
+                <div class="peach box">
+                    <p>Glory City</p>
+                </div>
+                <div class="horbour box">
+                    <p>Silent Harbour</p>
+                </div>
+                <div class="green box">
+                    <p>Paper Moon</p>
+                </div>
+                
+                <div class="neon box">
+                    <p>Neon Draft</p>
+                </div>
+            </div>
+            <p style="font-weight: 700; padding-top: 30px;">Action Movies</p>
+            <div class="action">
+                <div class="blue box">
+                    <p>Last Light</p>
+                </div>
+                <div class="neon box">
+                    <p>Neon Draft</p>
+                </div>
+                <div class="yellow box">
+                    <p style="color:black">Echo Chamber</p>
+                </div>
+                <div class="horbour box">
+                    <p>Silent Harbour</p>
+                </div>
+                <div class="peach box">
+                    <p>Glory City</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
