@@ -6,31 +6,34 @@
     <style>
         body {
             font-family: Arial;
-            background-color: #faefef;
+            background-color: #f2f2f2;
             text-align: center;
             padding: 50px;
         }
+
         .quiz-box {
             background-color: white;
             width: 500px;
             margin: auto;
-            padding: 50px;
+            padding: 30px;
             border-radius: 10px;
         }
+
         button {
             display: block;
             width: 100%;
-            height: 40px;
-            padding: 20px;
+            padding: 12px;
             margin: 10px 0;
             cursor: pointer;
-            border: 1px solid #b0b0b0;
+            border: 1px solid #ccc;
             background-color: white;
             border-radius: 5px;
         }
+
         button:hover {
-            background-color: #c3fde2;
+            background-color: #eee;
         }
+
         #score {
             font-weight: bold;
         }
@@ -42,19 +45,23 @@
     <div class="quiz-box">
 
         <h1>JS Quiz Arena</h1>
+
         <p id="progress">Q 1/5</p>
+
         <h2 id="question">Question</h2>
 
-        <button ></button>
-        <button ></button>
-        <button ></button>
-        <button ></button>
+        <button onclick="checkAnswer(0)" id="option0"></button>
+        <button onclick="checkAnswer(1)" id="option1"></button>
+        <button onclick="checkAnswer(2)" id="option2"></button>
+        <button onclick="checkAnswer(3)" id="option3"></button>
 
         <p id="score">Score: 0</p>
 
     </div>
 
     <script>
+
+        // Quiz questions
         const questions = [
             {
                 question: "Which language is used to make web pages interactive?",
@@ -89,6 +96,8 @@
 
         let currentQuestion = 0;
         let score = 0;
+
+        // Show question
         function showQuestion() {
 
             let q = questions[currentQuestion];
@@ -107,6 +116,7 @@
                 "Score: " + score;
         }
 
+        // Check answer
         function checkAnswer(selectedOption) {
 
             if (selectedOption === questions[currentQuestion].answer) {
@@ -137,6 +147,7 @@
             }
         }
 
+        // Start quiz
         showQuestion();
 
     </script>
