@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Player Rock Paper Scissors</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <p id="score">Player 1: 0 | Player 2: 0</p>
+
+    <section id="player-one">
+        <h2>Player 1</h2>
+        <p>Choose your move:</p>
+        <button data-player="1" data-move="rock">Rock</button>
+        <button data-player="1" data-move="paper">Paper</button>
+        <button data-player="1" data-move="scissors">Scissors</button>
+    </section>
+
+    <section id="player-two" hidden>
+        <h2>Player 2</h2>
+        <p>Choose your move:</p>
+        <button data-player="2" data-move="rock">Rock</button>
+        <button data-player="2" data-move="paper">Paper</button>
+        <button data-player="2" data-move="scissors">Scissors</button>
+    </section>
+
+    <p id="result">Player 1, choose your move.</p>
+    <button id="reset-game" type="button">Reset game</button>
+
+    <script src="rock_paper_scissor.js" defer></script>
+</body>
+</html>
